@@ -9,10 +9,10 @@
 
 /* Design tokens */
 :root {
-    --color-bg: #f5f7fa;
-    --color-surface: #ffffff;
+    --color-bg: #164b9b;
+    --color-surface: #bed9eb;
     --color-text: #1f2933;
-    --color-primary: #2563eb;
+    --color-primary: #304e8e;
     --color-primary-dark: #1d4ed8;
     --font-body: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     --space-sm: 0.5rem;
@@ -68,7 +68,7 @@ button {
     border: none;
     border-radius: var(--radius);
     background: var(--color-primary);
-    color: #fff;
+    color: #eddddd;
     cursor: pointer;
 }
 
