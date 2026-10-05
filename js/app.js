@@ -1,4 +1,22 @@
 
+function initializeTheme() {
+    if (localStorage.getItem('dashboardTheme') === 'dark') {
+        document.body.classList.add('theme-dark');
+    }
+}
+
+function toggleTheme() {
+    const isDark = document.body.classList.toggle('theme-dark');
+    if (isDark) {
+        localStorage.setItem('dashboardTheme', 'dark');
+    } else {
+        localStorage.setItem('dashboardTheme', 'light');
+    }
+}
+
+document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+initializeTheme();
+
 function loadWeather() {
     fetch('./data/weather.json')
         .then(response => response.json())
