@@ -14,3 +14,5 @@ A small dashboard that shows weather information and lets you switch between lig
 ## Notes
 
 The weather display reads its information from `data/weather.json`. Update that file to change the displayed weather.
+
+GitHub Pages still needs to be turned on in the repository settings and set to deploy from `main` before the live address above will work.
